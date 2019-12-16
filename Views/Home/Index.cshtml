@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <form method="post" action="Calc">
+        <input type="text" name="a" />
+        <select name="action">
+            <option></option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" name="b" />
+        <span>=</span>
+        <input name="result" />
+        <input type="submit" value="Calculate" />
+    </form>
+</body>
+</html>

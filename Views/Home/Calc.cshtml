@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Calc</title>
+</head>
+<body>
+    <form method="post" action="Calc">
+        <input type="text" name="a" value="@ViewBag.a"/>
+        <select name="action">
+            <option value="@ViewBag.action">@ViewBag.action</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" name="b" value="@ViewBag.b"/>
+        <span>=</span>
+        <input name="result" value="@ViewBag.result"/>
+        <input type="submit" value="Calculate" />
+    </form>
+    <div>
+    </div>
+</body>
+</html>
